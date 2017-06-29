@@ -19,9 +19,12 @@ public class TestArray {
 		}
 		System.out.println();
 	}
+	public static void change(Apple apple){
+		apple.setName("i am apple");
+	}
 	
 	public static void main(String[] args) {
-		int[] a = {1,2,3};
+	/*	int[] a = {1,2,3};
 		int b = 1;
 		TestArray testArray  = new TestArray();
 		testArray.f1(a,b);
@@ -31,8 +34,11 @@ public class TestArray {
 		Apple[] apples = new Apple[]{new Apple()};
 		apples[0].getAge();
 		System.out.println(apples[0].getAge());
-		int[] newarray = new int[-1];
+		int[] newarray = new int[-1];*/
 		
+		Apple apple = new Apple();
+		change(apple);
+		System.out.println(apple.name);
 		
 	}
 }
