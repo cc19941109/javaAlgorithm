@@ -19,7 +19,7 @@ public class QuickSortNew {
 
 		int key = a[low];
 		while(low<high){
-			while(key<a[high]&&low<high){
+			while(key <= a[high]&&low<high){
 				high--;
 			}
 			a[low] = a[high];
@@ -30,6 +30,7 @@ public class QuickSortNew {
 			a[high] = a[low];
 		}
 		print(a);
+		a[high] = key;
 		return low;
 	}
 	
@@ -43,7 +44,7 @@ public class QuickSortNew {
 	}
 	
 	public static void main(String[] args) {
-		int[] a = {3,1,4,5,2};
+		int[] a = {3,1,4,4,12,9,7,5,2,10};
 		sort(a, 0, a.length-1);
 		
 	}
